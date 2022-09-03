@@ -1,0 +1,36 @@
+<div class="grid grid-cols-1 md:grid-cols-2 h-screen">
+  <div class="hidden md:grid flex flex-wrap items-center  md:justify-end">
+    <img class="md:mr-16" src="/assets/login-banner.png" alt="image">
+  </div>
+  <div class="flex flex-wrap items-center justify-center md:justify-start">
+    <div>
+      <h1>
+        Great to have you here!
+      </h1>
+      <p class="mb-6 md:mb-2">
+        You can login to access your workspace.
+      </p>
+      <form class="loginForm" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="text-cemter">
+          <input class="input mb-6 md:mb-2" type="text" formControlName="email"  value="jojurdi@gmail.com" required/>
+          <div *ngIf="email?.hasError('required')">
+            El correo electrónico es necesario
+          </div>
+          <div *ngIf="email?.hasError('email')">
+            El correo electrónico no es válido
+          </div>
+        </div>
+        <div>
+          <input class="input mb-6 md:mb-2" type="password" formControlName="password" value="master01" required/>
+          <div *ngIf="password?.hasError('required')">
+            La contraseña es necesaria
+          </div>
+        </div>
+        <div>
+          <input class="btn w-full py-4 md:py-2" type="submit" value="Login" />
+           
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

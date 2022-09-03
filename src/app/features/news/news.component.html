@@ -1,0 +1,19 @@
+<div class=" py-4 ml-4">
+   <form [formGroup]="formFilter" class="flex" >
+      <select formControlName="country" class="input country mr-2"  (change)="onChange()">
+         <option value="us">United States</option>
+         <option value="mx">México</option>
+      </select>
+      <select formControlName="category" class="input category mr-2" (change)="onChange()">
+         <option value="business">Business</option>
+         <option value="technology">Technology</option>
+         <option value="sports">Sports</option> 
+      </select> 
+          
+   </form>
+</div>
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+   <app-new-item *ngFor="let newitem of news" [newitem]="newitem"></app-new-item>
+</div>

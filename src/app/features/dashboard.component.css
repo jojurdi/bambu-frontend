@@ -1,0 +1,36 @@
+h1 {
+  color: #002833;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+h2 {
+  color: #698893;
+  margin-bottom: 50px;
+}
+
+a {
+  color: #002833;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s border-bottom;
+}
+
+ 
+
+.btn {
+  background-color: #002833;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: 0.5s background-color;
+}
+
+a:hover {
+  border-bottom: 2px solid #002833;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #52b7c0;
+}

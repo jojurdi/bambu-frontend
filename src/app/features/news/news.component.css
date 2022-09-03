@@ -1,0 +1,18 @@
+.input {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 10px 20px;
+  font-family: inherit;
+  border: 0; 
+  outline: none; 
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  background: #f3f5fe;
+}
